@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  my-movie-app:
+    container_name: "find-my-movie"
+    image: iamamash/find-my-movie:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - find-my-movie-volume:/app
+
+volumes:
+  find-my-movie-volume:
