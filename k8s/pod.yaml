@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: movie
+  namespace: movie-ns
+spec:
+  containers:
+  - name: movie
+    image: iamamash/find-my-movie:latest
+    ports:
+    - containerPort: 8000
